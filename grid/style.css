@@ -8,6 +8,7 @@
     display: grid;
     grid-template-rows: 50px 120px 100px 120px;
     grid-template-columns: 120px 130px 100px;
+    margin-bottom: 2rem;
 }
 .item
 {   border-radius: 5px;
@@ -33,4 +34,45 @@ section{
     align-items: center;
     height: 100vh;
     flex-direction: column;
+}
+.piso{
+    margin-top: 3rem;
+    display: inline-grid;
+    grid-template: 90px 60px 60px 60px 90px/ 120px 60px 60px 120px;
+}
+.living{
+    background-color: rgb(98, 210, 126);
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.bath{
+    background-color: rgb(91, 134, 177);
+    color: rgb(0, 0, 0);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.bed{
+    background-color: rgb(210, 120, 120);
+    color: black;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.closet{
+    background-color: rgb(189, 77, 77);
+    color: black;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.kitchen{
+    background-color: rgb(255, 204, 102);
+    color: black;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
