@@ -1,0 +1,115 @@
+/* Basic, minimal styling */
+body {
+    font-family: system-ui, Arial;
+    margin: 0;
+    padding: 16px;
+    background: #3a1c3b;
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+
+}
+
+/* Add this: */
+button[data-op][aria-pressed="true"] {
+    background: #59167d;
+    border-color: #8aa3d8;
+    border-width: 3px;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 8px 0
+}
+
+.resultitulo {
+    size: 5rem;
+    text-align: center;
+}
+
+button,
+select,
+input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #364d70;
+    background: #243457;
+    color: #e5e7eb
+}
+
+button.primary {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.grid {
+    display: grid;
+    gap: 4px
+}
+
+.rowitem {
+    margin: .5rem;
+    padding: .5rem;
+}
+
+table {
+    border-collapse: collapse
+}
+
+td {
+    border: 2px dashed #657b9c;
+    padding: 5px
+}
+
+td input {
+    width: 50px;
+    text-align: center;
+    padding: 6px;
+    margin: 4px;
+    background: #0f172a;
+    border: 2px solid #334155;
+    color: #ffffff;
+    border-radius: 5px
+}
+
+
+/* Optional: responsive tweak */
+@media (max-width: 700px) {
+    td input {
+        width: 48px
+    }
+}
+
+/* base table style */
+.matrix {
+    border-collapse: collapse;
+    background: #12161c;
+    /* panel */
+    border: 1px solid #223046;
+    /* subtle border */
+    border-radius: 12px;
+    overflow: hidden;
+    /* keep rounded corners */
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+}
+
+/* base cell style */
+.matrix .matrix-cell {
+    border: 1px dashed #334155;
+    padding: 8px 10px;
+    text-align: center;
+    min-width: 44px;
+}
+
+/* result-specific tweaks */
+.result-matrix .matrix-cell {
+    background: #0f1520;
+    font-weight: 700;
+    letter-spacing: .2px;
+}

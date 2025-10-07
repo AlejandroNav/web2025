@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operaciones</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Operaciones de Matrices</h1>
+    <h3>Amalia Soto</h3>
+
+
+    <div class="row">
+        <label>Operaciones:</label>
+        <button data-op="sum" class="primary" aria-pressed="true">Suma</button>
+        <button data-op="rest" aria-pressed="false">Resta</button>
+        <button data-op="mul" aria-pressed="false">Multiplicacion</button>
+
+    </div>
+
+
+    <div class="row">
+        <label for="sizeN">Tamano N (De 2 a 5):</label>
+        <input id="sizeN" type="number" min="2" max="5" value="3" />
+        <button id="make" class="primary">Crear Matrices</button>
+        <button id="compute">Resolver</button>
+    </div>
+
+
+    <div class="row">
+        <div class="rowitem">
+            <h3 class="resultitulo">A</h3>
+            <div id="boxA"></div>
+        </div>
+        <div class="rowitem">
+            <h3 class="resultitulo">B</h3>
+            <div id="boxB"></div>
+        </div>
+    </div>
+
+
+    <h3>Resultado</h3>
+    <div id="boxR"></div>
+
+
+    <script defer src="app.js"></script>
+</body>
+
+</html>
