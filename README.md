@@ -1,2 +1,2 @@
 # web2025
-General programing web proejct for this year
+General programing web project for this year
