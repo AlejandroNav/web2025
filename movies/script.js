@@ -2,6 +2,12 @@
 // DOM references
 // -------------------
 
+const openDialogBtn = document.getElementById('open-dialog-btn');
+const dialog = document.getElementById('item-dialog');
+const closeDialogBtn = document.getElementById('close-dialog-btn');
+const itemForm = document.getElementById('item-form');
+const clearAllBtn = document.getElementById('clear-all-btn');
+const watchlistContainer = document.getElementById('watchlist-container');
 
 // -------------------
 // WatchlistItem class
