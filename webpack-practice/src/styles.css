@@ -1,0 +1,23 @@
+/* styles.css */
+body {
+    background-color: rebeccapurple;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}

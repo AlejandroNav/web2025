@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400&display=swap');
+
+body {
+    font-family: monospace;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffb5aa;
+
+}
+
+h1 {
+    font-size: 3rem;
+    border-bottom: 3px solid rgb(79, 11, 11);
+    font-family: 'Playfair Display', Courier, monospace;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(97, 14, 14);
+    font-family: 'Playfair Display', Courier, monospace;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+ol,
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+li {
+    font-size: .85rem;
+    padding: 4px 12px;
+    border: 1px solid rgba(139, 26, 26, .12);
+    border-radius: 100px;
+    background-color: #e3624e;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid rgba(139, 26, 26, .12);
+    margin: 2.5em 0;
+}
+
+#bici {
+    display: flex;
+    gap: 2rem;
+}
+
+#bici img {
+    display: block;
+    width: 100%;
+
+}
+
+#patinaje img {
+    display: block;
+    width: 100%;
+}
+
+#snow img {
+    width: 50px;
+    height: auto;
+}
+
+/* Diseño flex compartido para todas las secciones */
+section {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+/* El div de texto ocupa la mitad de la section */
+section div {
+    flex: 1;
+}
+
+/* La imagen ocupa la otra mitad sin distorsionarse */
+section img {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    object-fit: cover;
+    align-self: stretch;
+    border-radius: 8px;
+}
+
+/* En las secciones pares la imagen aparece a la izquierda */
+section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Natación usa columna para que la imagen quede abajo */
+#natacion {
+    flex-direction: column;
+}
+
+/* La imagen de natación ocupa la mitad del ancho */
+#natacion img {
+    width: 50%;
+}
